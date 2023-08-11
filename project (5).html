@@ -1,0 +1,340 @@
+<html>
+<head>
+<title>JAVA</title>
+<body>
+<nav id="sidebar">
+<h2>JAVA</h2>
+<ul>
+<li><a class="nav-item"
+href="#JAVA INTRO"><h1>JAVA INTRO</h1>
+</a>
+</li>
+<li><a class="nav-item"
+href="#JAVA METHODS"><h1>JAVA METHODS</h1>
+</a>
+</li>
+<li><a class="nav-item"
+href="#JAVA CLASSES"><h1>JAVA CLASSES</h1>
+</a>
+</li>
+<li><a class="nav-item"
+href="#JAVA FILES"><h1>JAVA FILES</h1>
+</a>
+</li>
+</ul>
+</nav>
+<main id="JAVA">
+<section id="JAVA INTRO">
+<h2><center>JAVA INTRO</center></h2>
+<article>
+<p>
+<h2><strong><bold>What is Java?</bold><br>
+Java is a popular programming language, created in 1995.<br>
+
+It is owned by Oracle, and more than 3 billion devices run Java.<br>
+
+</strong><bold>It is used for:</bold>
+<br>
+ <ol> Mobile applications (specially Android apps)<br>
+  Desktop applications<br>
+  Web applications<br>
+  Web servers and application servers<br>
+  Games<br>
+  Database connection<br>
+  And much, much more!<br>
+</ol>
+
+ <strong><bold> Why Use Java?</strong></bold><br>
+
+  Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)<br>
+<br>
+  It is one of the most popular programming language in the world<br>
+  It has a large demand in the current job market<br>
+  It is easy to learn and simple to use<br>
+  It is open-source and free<br>
+  It is secure, fast and powerful<br>
+ It has a huge community support (tens of millions of developers)<br>
+<br>
+
+Java is an object oriented language which gives a clear structure to programs and allows code to be reused, lowering development costs
+<br>
+As Java is close to C++ and C#, it makes it easy for programmers to switch to Java or vice versa<br>
+</h2>
+<main id="JAVA">
+<section id="JAVA METHODS">
+<h2><center>JAVA METHODS</center></h2>
+<article>
+<p>
+<h2><strong>A method is a block of code which only runs when it is called.<br>
+
+You can pass data, known as parameters, into a method.<br>
+
+
+Methods are used to perform certain actions, and they are also known as functions.</strong>
+<bold><br>
+
+<br><bold>Why use methods?<br></bold>
+ To reuse code: define the code once, and use it many times.</bold><br>
+
+
+
+<bold>Create a Method<br>
+</bold>
+<br>
+
+A method must be declared within a class. It is defined with the name of the method, followed by parentheses (). Java provides some pre-defined methods, such as System.out.println(), but you can also create your own methods to perform certain actions:
+
+<br>
+<br>
+
+<strong><bold>Example<br></strong>
+
+
+Create a method inside Main:<br></bold>
+
+
+public class Main {<br>
+  static void myMethod() {<br>
+    // code to be executed<br>
+  }<br>
+}<br>
+<br>
+ 
+<strong><bold>Example Explained<br></bold></strong>
+
+myMethod() is the name of the method<br>
+
+static means that the method belongs to the Main class and not an object of the Main class. You will learn more about objects and how to access methods through objects later in this tutorial.
+void means that this method does not have a return value. You will learn more about return values later in this chapter<br>
+
+<bold>Call a Method<br></bold>
+
+<br>To call a method in Java, write the method's name followed by two parentheses () and a semicolon;<br>
+
+
+In the following example, myMethod() is used to print a text (the action), when it is called:<br>
+
+
+<br><strong><bold>Example<br></bold></strong>
+
+Inside main, call the myMethod() method:<br>
+
+
+public class Main {<br>
+  static void myMethod() {<br>
+    System.out.println("I just got executed!");<br>
+  }<br>
+
+  public static void main(String[] args) {<br>
+    myMethod();<br>
+  }<br>
+}<br>
+<br>
+</P>
+</h2>
+<main id="JAVA">
+<section id="JAVA CLASSES">
+<h2><center>JAVA CLASSES<center></h2>
+<article>
+<p><h2>
+<strong>Java Classes/Objects</strong><br>
+<br>Java is an object-oriented programming language.
+
+<br>Everything in Java is associated with classes and objects, along with its attributes and methods. For example: in real life, a car is an object. The car has attributes, such as weight and color, and methods, such as drive and brake.
+
+<br>A Class is like an object constructor, or a "blueprint" for creating objects.
+
+<br><strong>Create a Class</strong>
+<br>To create a class, use the keyword class:
+
+<br>Main.javaGet your own Java Server
+<br>Create a class named "Main" with a variable x:
+
+<br>public class Main {
+ <br> int x = 5;
+<br>}
+<br><strong>Using Multiple Classes</strong>
+<br>You can also create an object of a class and access it in another class. This is often used for better organization of classes (one class has all the attributes and methods, while the other class holds the main() method (code to be executed)).
+
+<br>Remember that the name of the java file should match the class name. In this example, we have created two files in the same directory/folder:
+
+<br>Main.java
+<br>Second.java
+<br>
+<br><strong>Abstract Classes and Methods</strong>
+<br>Data abstraction is the process of hiding certain details and showing only essential information to the user.
+<br>Abstraction can be achieved with either abstract classes or interfaces (which you will learn more about in the next chapter).
+<br>
+<br>The abstract keyword is a non-access modifier, used for classes and methods:
+
+<br>Abstract class is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
+
+<br>Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from).
+<br>An abstract class can have both abstract and regular methods:
+<br><strong>Java Inheritance (Subclass and Superclass)</strong>
+<br>In Java, it is possible to inherit attributes and methods from one class to another. We group the "inheritance concept" into two categories:
+
+<br>subclass (child) - the class that inherits from another class
+<br>superclass (parent) - the class being inherited from
+<br>To inherit from a class, use the extends keyword.
+<br><strong>Java Polymorphism</strong>
+<br>Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance.
+
+<br>Like we specified in the previous chapter; Inheritance lets us inherit attributes and methods from another class. Polymorphism uses those methods to perform different tasks. This allows us to perform a single action in different ways.
+
+<br>For example, think of a superclass called Animal that has a method called animalSound(). Subclasses of Animals could be Pigs, Cats, Dogs, Birds - And they also have their own implementation of an animal sound (the pig oinks, and the cat meows, etc.):
+</P>
+</h2>
+<main id="JAVA">
+<section id="JAVA FILES">
+<h2><center>JAVA FILES</center></h2>
+<article><h2>
+<br>File handling is an important part of any application.
+
+<br>Java has several methods for creating, reading, updating, and deleting files.
+
+<br><strong>Java File Handling</strong>
+<Sbr>The File class from the java.io package, allows us to work with files.
+
+<br>To use the File class, create an object of the class, and specify the filename or directory name:
+
+<br>ExampleGet your own Java Server
+<br>import java.io.File;  // Import the File class
+
+<br>File myObj = new File("filename.txt"); // Specify the filename
+<br>
+<br><strong>Create a File</strong>
+<br>To create a file in Java, you can use the createNewFile() method. 
+<br>This method returns a boolean value: true if the file was successfully created, and false if the file already exists. 
+<br>Note that the method is enclosed in a try...catch block. 
+<br>This is necessary because it throws an IOException if an error occurs (if the file cannot be created for some reason)
+<br>ead a File
+<br>In the previous chapter, you learned how to create and write to a file.
+
+<br><strong>Delete a File</strong>
+<br>To delete a file in Java, use the delete() method:
+<main id="Java">
+<section id="History">
+<article>
+<p>
+</H2>
+
+<h2>History</h2>
+<h3>
+
+Duke, the Java mascot
+
+James Gosling, the creator of Java, in 2008
+
+The TIOBE programming language popularity index graph from 2002 to 2022. Java was steadily on the top from mid-2015 to early 2020.
+James Gosling, Mike Sheridan, and Patrick Naughton initiated the Java language project in June 1991.[22] Java was originally designed for interactive television, but it was too advanced for the digital cable television industry at the time.[23] The language was initially called Oak after an oak tree that stood outside Gosling's office. Later the project went by the name Green and was finally renamed Java, from Java coffee, a type of coffee from Indonesia.[24] Gosling designed Java with a C/C++-style syntax that system and application programmers would find familiar.[25]
+
+Sun Microsystems released the first public implementation as Java 1.0 in 1996.[26] It promised write once, run anywhere (WORA) functionality, providing no-cost run-times on popular platforms. Fairly secure and featuring configurable security, it allowed network- and file-access restrictions. Major web browsers soon incorporated the ability to run Java applets within web pages, and Java quickly became popular. The Java 1.0 compiler was re-written in Java by Arthur van Hoff to comply strictly with the Java 1.0 language specification.[27] With the advent of Java 2 (released initially as J2SE 1.2 in December 1998 – 1999), new versions had multiple configurations built for different types of platforms. J2EE included technologies and APIs for enterprise applications typically run in server environments, while J2ME featured APIs optimized for mobile applications. The desktop version was renamed J2SE. In 2006, for marketing purposes, Sun renamed new J2 versions as Java EE, Java ME, and Java SE, respectively.
+
+In 1997, Sun Microsystems approached the ISO/IEC JTC 1 standards body and later the Ecma International to formalize Java, but it soon withdrew from the process.[28][29][30] Java remains a de facto standard, controlled through the Java Community Process.[31] At one time, Sun made most of its Java implementations available without charge, despite their proprietary software status. Sun generated revenue from Java through the selling of licenses for specialized products such as the Java Enterprise System.
+
+On November 13, 2006, Sun released much of its Java virtual machine (JVM) as free and open-source software (FOSS), under the terms of the GPL-2.0-only license. On May 8, 2007, Sun finished the process, making all of its JVM's core code available under free software/open-source distribution terms, aside from a small portion of code to which Sun did not hold the copyright.[32]
+
+Sun's vice-president Rich Green said that Sun's ideal role with regard to Java was as an evangelist.[33] Following Oracle Corporation's acquisition of Sun Microsystems in 2009–10, Oracle has described itself as the steward of Java technology with a relentless commitment to fostering a community of participation and transparency.[34] This did not prevent Oracle from filing a lawsuit against Google shortly after that for using Java inside the Android SDK (see the Android section).
+
+On April 2, 2010, James Gosling resigned from Oracle.[35]
+
+In January 2016, Oracle announced that Java run-time environments based on JDK 9 will discontinue the browser plugin.[36]
+
+Java software runs on everything from laptops to data centers, game consoles to scientific supercomputers.[37]
+
+Oracle (and others) highly recommend uninstalling outdated and unsupported versions of Java, due to unresolved security issues in older versions.[38]
+</br>
+</br>
+
+</p>
+</h3>
+<main id="Java">
+<section id="Principles">
+<article>
+<p>
+
+<h2>Principles</h2>
+There were five primary goals in the creation of the Java language:[18]
+<ol>
+<li>It must be simple, object-oriented, and familiar.</li>
+<li>It must be robust and secure.</li>
+<li>It must be architecture-neutral and portable.</li>
+<li>It must execute with high performance.</li>
+<li>It must be interpreted, threaded, and dynamic.</li>
+</ol>
+</br></br></p>
+
+
+<main id="Java">
+<section id="Versions">
+<article>
+<p>
+<h2>Versions</h2>
+As of September 2021, Java 8, 11 and 17 are supported as Long-Term Support (LTS) versions.[39]
+
+Oracle released the last zero-cost public update for the legacy version Java 8 LTS in January 2019 for commercial use, although it will otherwise still support Java 8 with public updates for personal use indefinitely. Other vendors have begun to offer zero-cost builds of OpenJDK 18 and 8, 11 and 17 that are still receiving security and other upgrades.
+
+Major release versions of Java, along with their release dates:
+
+Version	Date
+JDK Beta	1995
+JDK 1.0	January 23, 1996[40]
+JDK 1.1	February 19, 1997
+J2SE 1.2	December 8, 1998
+J2SE 1.3	May 8, 2000
+J2SE 1.4	February 6, 2002
+J2SE 5.0	September 30, 2004
+Java SE 6	December 11, 2006
+Java SE 7	July 28, 2011
+Java SE 8 (LTS)	March 18, 2014
+Java SE 9	September 21, 2017
+Java SE 10	March 20, 2018
+Java SE 11 (LTS)	September 25, 2018[41]
+Java SE 12	March 19, 2019
+Java SE 13	September 17, 2019
+Java SE 14	March 17, 2020
+Java SE 15	September 15, 2020[42]
+Java SE 16	March 16, 2021
+Java SE 17 (LTS)	September 14, 2021
+Java SE 18	March 22, 2022
+Java SE 19	September 20, 2022
+Java SE 20	March 21, 2023
+
+
+</br></br>
+</p>
+
+<main id="Java">
+<section id="Execution System">
+<article>
+<p>
+<h2>Execution System</h2>
+One design goal of Java is portability, which means that programs written for the Java platform must run similarly on any combination of hardware and operating system with adequate run time support. This is achieved by compiling the Java language code to an intermediate representation called Java bytecode, instead of directly to architecture-specific machine code. Java bytecode instructions are analogous to machine code, but they are intended to be executed by a virtual machine (VM) written specifically for the host hardware. End-users commonly use a Java Runtime Environment (JRE) installed on their device for standalone Java applications or a web browser for Java applets.
+
+Standard libraries provide a generic way to access host-specific features such as graphics, threading, and networking.
+
+The use of universal bytecode makes porting simple. However, the overhead of interpreting bytecode into machine instructions made interpreted programs almost always run more slowly than native executables. Just-in-time (JIT) compilers that compile byte-codes to machine code during runtime were introduced from an early stage. Java's Hotspot compiler is actually two compilers in one; and with GraalVM (included in e.g. Java 11, but removed as of Java 16) allowing tiered compilation.[47] Java itself is platform-independent and is adapted to the particular platform it is to run on by a Java virtual machine (JVM), which translates the Java bytecode into the platform's machine language.[48]
+</br></br>
+<h2>Performance</h2>
+Main article: Java performance
+Programs written in Java have a reputation for being slower and requiring more memory than those written in C++.[49][50] However, Java programs' execution speed improved significantly with the introduction of just-in-time compilation in 1997/1998 for Java 1.1,[51] the addition of language features supporting better code analysis (such as inner classes, the StringBuilder class, optional assertions, etc.), and optimizations in the Java virtual machine, such as HotSpot becoming Sun's default JVM in 2000. With Java 1.5, the performance was improved with the addition of the java.util.concurrent package, including lock-free implementations of the ConcurrentMaps and other multi-core collections, and it was improved further with Java 1.6.
+
+
+Having solved the memory management problem does not relieve the programmer of the burden of handling properly other kinds of resources, like network or database connections, file handles, etc., especially in the presence of exceptions.Non-JVM
+Some platforms offer direct hardware support for Java; there are micro controllers that can run Java bytecode in hardware instead of a software Java virtual machine,[52] and some ARM-based processors could have hardware support for executing Java bytecode through their Jazelle option, though support has mostly been dropped in current implementations of ARM.
+</p>
+</br></br>
+
+<main id="Java">
+<section id="Syntax">
+<article>
+<p>
+<h2>Syntax</h2>
+The syntax of Java is largely influenced by C++ and C. Unlike C++, which combines the syntax for structured, generic, and object-oriented programming, Java was built almost exclusively as an object-oriented language.[18] All code is written inside classes, and every data item is an object, with the exception of the primitive data types, (i.e. integers, floating-point numbers, boolean values, and characters), which are not objects for performance reasons. Java reuses some popular aspects of C++ (such as the printf method).
+
+Unlike C++, Java does not support operator overloading[57] or multiple inheritance for classes, though multiple inheritance is supported for interfaces.[58]
+
+Java uses comments similar to those of C++. There are three different styles of comments: a single line style marked with two slashes (//), a multiple line style opened with /* and closed with /, and the Javadoc commenting style opened with /* and closed with */. The Javadoc style of commenting allows the user to run the Javadoc executable to create documentation for the program and can be read by some integrated development environments (IDEs) such as Eclipse to allow developers to access documentation within the IDE.
+</h3></body>
+</html>
